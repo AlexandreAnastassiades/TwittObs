@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="374.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Twitter_App.Projet_Info_8.FavHashtag">
+   <children>
+      <Label fx:id="nbTweetH" layoutX="64.0" layoutY="360.0" textFill="#00acee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbUsrH" layoutX="63.0" layoutY="396.0" textFill="#00acee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbTweetH2" layoutX="229.0" layoutY="360.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbUsrH2" layoutX="235.0" layoutY="396.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="hChart1" animated="false" layoutX="14.0" layoutY="28.0" legendVisible="false" prefHeight="334.0" prefWidth="520.0" title="Top 10 Hashtag">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
